@@ -45,6 +45,7 @@ O principal objetivo deste projeto foi desenvolver e compreender a **lógica por
 A parte visual foi utilizada como uma camada gráfica para apresentar essa lógica de forma interativa.
 
 **As imagens, sprites e elementos gráficos utilizados no jogo não foram criados por mim.**
+**Eu desenvolvi a lógica e utilizei IA como ferramenta de apoio para a parte visual.**
 
 Meu foco foi principalmente na programação responsável pelo funcionamento do RPG, incluindo:
 
