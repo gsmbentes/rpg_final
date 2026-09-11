@@ -7,24 +7,8 @@ Este arquivo preserva 100% das regras originais do seu `jogo.py`:
 - Jogo (classe base): vida, ataque básico, defesa básica.
 - Heroi: dano extra baseado em "poder", defesa com escudo (reduz dano fixo).
 - Mago: dano baseado em "magia", defesa com barreira (reduz dano fixo).
-
-O que foi ADICIONADO (de forma compatível, sem quebrar o que já existia):
-- `vida_maxima`: necessário para desenhar a barra de vida corretamente
-  e para a poção não curar acima do máximo.
-- `esta_vivo()`: usado pela tela de vitória/derrota.
-- `defendendo` + `ativar_defesa()`: nova AÇÃO de combate (o botão
-  "DEFENDER" da interface). Antes, `defender()` só existia como reação
-  automática a um ataque. Agora o jogador também pode escolher se
-  defender no seu turno: a lógica foi colocada no método `defender()` da
-  classe base, então Heroi e Mago (que chamam `super().defender(...)` no
-  final) ganham esse bônus automaticamente, sem precisar duplicar código.
-- `usar_pocao()`: nova ação de cura (o botão "POÇÃO"), controlada por um
-  número limitado de poções (`pocoes`).
-- `atacar()` e `defender()` agora retornam o valor do dano/cura aplicado.
-  Isso não muda o comportamento do jogo original (os prints continuam
-  iguais), só permite que a interface gráfica saiba quanto de dano
-  mostrar na tela e no log de combate.
 """
+
 
 import random
 
