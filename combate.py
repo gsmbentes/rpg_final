@@ -1,15 +1,3 @@
-"""
-combate.py
-----------
-Regras de turno do combate. Não sabe nada sobre Pygame, cores ou desenho —
-só conhece objetos `Jogo`/`Heroi`/`Mago` (entidades.py) e decide quem age
-quando, registrando mensagens para o log da interface.
-
-A separação é proposital:
-    entidades.py -> "o que cada personagem SABE FAZER"
-    combate.py   -> "QUANDO e EM QUE ORDEM as ações acontecem"
-    sprites.py / ui.py / game.py -> "COMO isso aparece na tela"
-"""
 
 import random
 
